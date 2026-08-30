@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Enrollment Form</title>
+</head>
+
+<body>
+
+    <h1>Course Enrollment</h1>
+
+    <p>Welcome! Fill out this form to enroll in a programming course.</p>
+
+    <!-- Image outside the form -->
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+         alt="Students learning programming"
+         width="500">
+
+    <p>
+        <a href="courses.html">Click here to see course information</a>
+    </p>
+
+    <hr>
+
+    <form>
+
+        <h2>Student Information</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="student_name"
+               placeholder="Enter your name"
+               minlength="3"
+               maxlength="50"
+               required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="example@gmail.com"
+               required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="Enter password"
+               minlength="8"
+               required>
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile"
+               placeholder="9876543210"
+               pattern="[0-9]{10}"
+               required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="date_of_birth" required>
+
+        <h2>Course Details</h2>
+
+        <label for="course">Choose a Course:</label>
+        <select id="course" name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="web">Web Development</option>
+            <option value="dsa">Data Structures</option>
+            <option value="database">Database</option>
+            <option value="datascience">Data Science</option>
+        </select>
+
+        <br><br>
+
+        <label for="batch">Choose Batch:</label>
+        <select id="batch" name="batch" required>
+            <option value="">-- Select Batch --</option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+            <option value="weekend">Weekend</option>
+        </select>
+
+        <h3>Learning Mode</h3>
+
+        <input type="radio" id="online" name="learning_mode" value="online" required>
+        <label for="online">Online</label>
+
+        <input type="radio" id="offline" name="learning_mode" value="offline">
+        <label for="offline">Offline</label>
+
+        <input type="radio" id="hybrid" name="learning_mode" value="hybrid">
+        <label for="hybrid">Hybrid</label>
+
+        <h3>Areas of Interest</h3>
+
+        <input type="checkbox" id="java_interest" name="interest" value="java">
+        <label for="java_interest">Java</label>
+        <br>
+
+        <input type="checkbox" id="python_interest" name="interest" value="python">
+        <label for="python_interest">Python</label>
+        <br>
+
+        <input type="checkbox" id="web_interest" name="interest" value="web_development">
+        <label for="web_interest">Web Development</label>
+        <br>
+
+        <input type="checkbox" id="dsa_interest" name="interest" value="data_structures">
+        <label for="dsa_interest">Data Structures</label>
+        <br>
+
+        <input type="checkbox" id="database_interest" name="interest" value="database">
+        <label for="database_interest">Database</label>
+
+        <h2>Education Details</h2>
+
+        <label for="education">Education Level:</label>
+        <select id="education" name="education" required>
+            <option value="">-- Select --</option>
+            <option value="school">School</option>
+            <option value="diploma">Diploma</option>
+            <option value="graduation">Graduation</option>
+            <option value="postgraduation">Post Graduation</option>
+        </select>
+
+        <br><br>
+
+        <label for="college">College/Institution:</label>
+        <input type="text" id="college" name="college"
+               placeholder="Enter college name"
+               required>
+
+        <br><br>
+
+        <label for="year">Current Semester/Year:</label>
+        <input type="text" id="year" name="semester_year"
+               placeholder="Example: 2nd Year"
+               required>
+
+        <br><br>
+
+        <label for="experience">Programming Experience (years):</label>
+        <input type="number" id="experience" name="experience"
+               min="0" max="20" step="1" value="0">
+
+        <br><br>
+
+        <label for="github">GitHub/Portfolio:</label>
+        <input type="url" id="github" name="github"
+               placeholder="https://github.com/username">
+
+        <h2>Learning Goals</h2>
+
+        <label for="goals">Tell us about your learning goals:</label>
+        <br>
+
+        <textarea id="goals" name="learning_goals"
+                  rows="5" cols="50"
+                  placeholder="Write your learning goals here..."
+                  minlength="10"
+                  maxlength="500"
+                  required></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="confirm" name="confirmation"
+               value="yes" required>
+        <label for="confirm">
+            I confirm that all the information I entered is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

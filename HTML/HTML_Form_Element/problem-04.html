@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title>employee leave request</title>
+    <head><h1>Employee Leave Request Page</h1></head>
+    <body><h2>Employee info</h2>
+    <form><b>name</b><input type="text" placeholder="name"><br>
+    <b>employee id</b> <input type="number" placeholder="employee id"><br>
+    <b>email</b><input type="email" placeholder="enter your email"><br>
+    <b>department</b><input type="text" placeholder="dept">
+    <h2>Leave</h2>
+    <b>type of leave</b>
+    <select>
+        <option value=" leave">casual leave</option>
+        <option value=" leave ">sick leave</option>
+        <option value="leave">Earned leave</option>
+        <option value="leave">work from home</option>
+        <option value="leave">Other</option>
+    </select>
+    <br>
+    <b>Leave Period</b>
+    <b>from <input type="date"> to: <input type="date"></b><br>
+    <b>Avaibility During the leave </b>
+    <input name="available" type="radio">
+    <label for="avalable">available</label>
+    <input name="available" type="radio">
+    <lable for="available">not available</lable>
+    <br><hr>
+    <textarea 
+                  rows="5" cols="50"
+                  placeholder="Reason for leave ...."
+                  minlength="1"
+                  maxlength="500"
+                  required></textarea>
+    </form>
+    <input type="checkbox" 
+               value="yes" required>
+        <label for="confirm">
+            I confirm that all the information I entered is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+</body>
+</html>
